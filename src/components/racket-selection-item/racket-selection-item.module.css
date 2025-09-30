@@ -1,0 +1,19 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 180ms ease, transform 180ms ease;
+    padding: 8px;
+}
+
+.card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+    transform: translateY(-1px);
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}

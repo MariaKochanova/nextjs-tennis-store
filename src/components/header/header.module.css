@@ -16,4 +16,6 @@
 
 .nav {
     margin-left: auto;
+    display: flex;
+    gap: 12px;
 }

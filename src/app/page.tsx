@@ -1,7 +1,13 @@
-import { FC } from 'react';
+import { RacketSelectionItem } from "@/components/racket-selection-item/racket-selection-item";
+import { Selection } from "@/components/selection/selection";
+import { rackets } from "@/constants/mock";
 
-const Page: FC = () => {
-  return <div>Home page</div>
+export default function Home() {
+  return (
+    <Selection title='Ракетки' hrefToAll='/rackets'>
+      {rackets.slice(0, 5).map((racket) => (
+        <RacketSelectionItem key={racket.id} racket={racket} />
+      ))}
+    </Selection>
+  );
 }
-
-export default Page;
