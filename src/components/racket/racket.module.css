@@ -1,0 +1,26 @@
+.section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    padding: 8px;
+    justify-self: center;
+}
+
+.brand {
+    color: gray;
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
